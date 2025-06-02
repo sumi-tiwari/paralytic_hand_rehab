@@ -1,0 +1,56 @@
+#  Paralytic Hand Rehabilitation Device
+
+![Hand Rehab Banner](images/rehab_banner.jpg)
+
+> Empowering Recovery – A smart, low-cost wearable device designed to assist patients with paralytic hand conditions through AI-driven therapy, soft robotics, and gamified engagement.
+
+
+ Short Description
+
+The **Paralytic Hand Rehabilitation Device** is a wearable smart glove designed to aid in physiotherapy for individuals with hand paralysis. It incorporates flex sensors, soft robotic actuators, and AI-based feedback to promote active recovery. The device is affordable, portable, and customizable to fit individual patient needs. A complementary web interface educates users and logs data for progress tracking.
+
+ Features
+
+- AI-driven Rehabilitation with movement pattern recognition
+- Soft Robotics for gentle and adaptive hand support
+- Flex Sensor Integration for finger position monitoring
+- Gamified Therapy to encourage engagement and faster recovery
+- Lightweight & Portable glove design with strip batteries
+- Website Interface for user education, logs, and progress
+
+
+ Hardware Components
+
+| Component                 | Quantity |
+|---------------------------|----------|
+| Arduino Nano/Uno          | 1        |
+| Flex Sensors (per finger) | 5        |
+| Servo Motors / Actuators  | 5        |
+| Soft Material (Glove)     | 1        |
+| Strip Batteries / Power   | 1        |
+| Jumper Wires              | —        |
+| Breadboard / PCB          | 1        |
+
+
+ How It Works
+
+1. Finger Movement Detection: Flex sensors detect the bending of each finger.
+2. Motor Actuation: Based on the desired therapy routine, actuators help fingers move.
+3. Feedback Loop: The system provides haptic feedback and progress info.
+4. Gamified Sessions: Patients perform tasks in a game-like interface to motivate continuous use.
+5. AI Analysis (Future): Patterns of movement and recovery trends can be used to adapt therapy dynamically.
+
+
+
+ How to Set Up and Run
+
+
+1. Open `arduino/rehab_glove.ino` in the Arduino IDE.
+2. Connect flex sensors to analog pins and servos to PWM pins.
+3. Upload the code to the board.
+4. Monitor movement readings via Serial Monitor.
+
+
+1. Navigate to `website/` folder.
+2. Open `index.html` in your browser to explore the device interface.
+3. (Optional) Integrate real-time data visualization using Firebase, Blynk, or Node
